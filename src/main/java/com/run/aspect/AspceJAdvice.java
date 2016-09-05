@@ -1,4 +1,6 @@
-﻿package com.run.aspect;
+﻿
+package com.run.aspect;
+
 
 import org.aspectj.lang.JoinPoint;  
 import org.aspectj.lang.ProceedingJoinPoint;  
