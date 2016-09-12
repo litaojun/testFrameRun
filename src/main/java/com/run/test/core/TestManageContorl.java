@@ -49,7 +49,7 @@ public class TestManageContorl
 
      public static void initInterfacemethod() throws ClassNotFoundException, IOException
      {
-    	 ArrayList<Class>  x = ClassUtils.filterClassByKey("Interface","com.didispace.test");
+    	 ArrayList<Class>  x = ClassUtils.filterClassByKey("Interface","com.run.test");
     	//System.out.println("xxx="+x.size());
 //    	 for(Class s : x)
 //    		 System.out.println(s.getName());
