@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TestFrameRunApplication {
 
 	public static void main(String[] args) {
+		System.out.println("sss");
 		SpringApplication.run(TestFrameRunApplication.class, args);
 	}
 }
