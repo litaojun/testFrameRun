@@ -21,6 +21,7 @@ public class TestUserGetInterface
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
 	        hmp.put("retcode", 2);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "paramfunsstt0");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -32,6 +33,7 @@ public class TestUserGetInterface
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
 	        hmp.put("retcode", 2);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "paramfunsstt1");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -43,6 +45,7 @@ public class TestUserGetInterface
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
 	        hmp.put("retcode", 2);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "paramfunsstt11");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -54,6 +57,7 @@ public class TestUserGetInterface
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
 	        hmp.put("retcode", 2);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "paramfunsstt2");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -65,6 +69,7 @@ public class TestUserGetInterface
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
 	        hmp.put("retcode", 2);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "paramfunsstt21");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -76,6 +81,7 @@ public class TestUserGetInterface
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
 	        hmp.put("retcode", 2);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "paramfunsstt3");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -87,6 +93,7 @@ public class TestUserGetInterface
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
 	        hmp.put("retcode", 2);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "paramfunsstt31");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }

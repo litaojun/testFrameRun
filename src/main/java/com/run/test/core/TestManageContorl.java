@@ -119,7 +119,7 @@ public class TestManageContorl
      
      public static void initResultmethod() throws ClassNotFoundException, IOException
      {
-    	 ArrayList<Class>  x = ClassUtils.filterClassByKey("ResultMatch","com.didispace.test");
+    	 ArrayList<Class>  x = ClassUtils.filterClassByKey("ResultMatch","com.run.test");
     	// System.out.println("xxx="+x.size());
 //    	 for(Class s : x)
 //    		 System.out.println(s.getName());

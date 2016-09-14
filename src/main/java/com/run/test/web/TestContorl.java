@@ -44,7 +44,7 @@ public class TestContorl
         return retstr;
     }
 	
-	
+	//activation.jar
 	@RequestMapping("/resultCompare")
     public String resultCompare(@RequestParam("intfacename") String name,@RequestParam("caseid") String caseid) throws ClassNotFoundException, IOException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, InstantiationException 
 	{

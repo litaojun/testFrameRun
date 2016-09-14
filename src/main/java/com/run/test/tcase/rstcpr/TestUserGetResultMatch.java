@@ -22,8 +22,9 @@ public class TestUserGetResultMatch {
 //		    System.out.println("matchparamfunsstt0");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
-	        hmp.put("retcode", 2);
+	        hmp.put("retcode", 1);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "matchparamfunsstt0");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -35,6 +36,7 @@ public class TestUserGetResultMatch {
 	        HashMap<String,Object> hmp = new HashMap<String,Object>();
 	        hmp.put("retcode", 2);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "matchparamfunsstt1");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -44,8 +46,9 @@ public class TestUserGetResultMatch {
 //		 System.out.println("matchparamfunsstt11");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
-	        hmp.put("retcode", 2);
+	        hmp.put("retcode", 0);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "matchparamfunsstt11");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -55,8 +58,9 @@ public class TestUserGetResultMatch {
 //		 System.out.println("matchparamfunsstt2");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
-	        hmp.put("retcode", 2);
+	        hmp.put("retcode", 1);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "matchparamfunsstt2");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -66,9 +70,11 @@ public class TestUserGetResultMatch {
 //		 System.out.println("matchparamfunsstt21");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
-	        hmp.put("retcode", 2);
+	        hmp.put("retcode", 1);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "matchparamfunsstt21");
 	        String stra = objectMapper.writeValueAsString(hmp);
+	        
 	        return stra ;
 	 }
 	 @ResultCompare(ifname = "useradd", cstype = 3,rule = {1,3,6,7}, cls = UserAddRsp.class)
@@ -79,8 +85,9 @@ public class TestUserGetResultMatch {
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
 //	    	System.out.println("yqrst="+yqrst);
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
-	        hmp.put("retcode", 2);
+	        hmp.put("retcode", 1);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "matchparamfunsstt3");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }
@@ -90,8 +97,9 @@ public class TestUserGetResultMatch {
 //		 System.out.println("matchparamfunsstt31");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
 	        HashMap<String,Object> hmp = new 	HashMap<String,Object>();
-	        hmp.put("retcode", 2);
+	        hmp.put("retcode", 0);
 	        hmp.put("user", uaif);
+	        hmp.put("function", "matchparamfunsstt31");
 	        String stra = objectMapper.writeValueAsString(hmp);
 	        return stra ;
 	 }

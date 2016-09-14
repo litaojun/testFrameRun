@@ -1,4 +1,3 @@
-﻿
 package com.run.aspect;
 
 
@@ -19,7 +18,7 @@ import org.springframework.stereotype.Service;
   
 //http://blog.csdn.net/xiaoxian8023/article/details/17285809
 /** http://www.cnblogs.com/leiOOlei/p/3613352.html
- * ����after,before,around,throwing,returning Advice. 
+
 // * @author Admin 
  * 
  */  
@@ -47,7 +46,7 @@ public class AspceJAdvice {
     public void beforeAdvice(JoinPoint joinPoint) {    
         System.out.println("-----beforeAdvice().invoke-----");  
         int a = joinPoint.getArgs().length;
-        System.out.println(" ��ͨ��joinPoint����ȡ����Ҫ������");  
+
         System.out.println("-----End of beforeAdvice()------");  
     }  
       
@@ -59,8 +58,7 @@ public class AspceJAdvice {
     @After(value = "aspectjMethod()")    
     public void afterAdvice(JoinPoint joinPoint) {    
         System.out.println("-----afterAdvice().invoke-----");  
-        System.out.println(" �˴�����ִ�к���ҵ���߼�֮����һЩ��־��¼�����ȵ�");  
-        System.out.println(" ��ͨ��joinPoint����ȡ����Ҫ������");  
+
         System.out.println("-----End of afterAdvice()------");  
     }    
     /**  
@@ -76,11 +74,11 @@ public class AspceJAdvice {
      @Around(value = "aspectjMethod()")    
     public Object aroundAdvice(ProceedingJoinPoint pjp) throws Throwable {    
         System.out.println("-----aroundAdvice().invoke-----");  
-        System.out.println(" �˴�������������Before Advice������");  
+
           
-        //���ú����߼�  
+
         Object retVal = pjp.proceed();  
-        System.out.println(" �˴�������������After Advice������");  
+
         System.out.println("-----End of aroundAdvice()------");  
         return retVal;  
     }    
@@ -93,8 +91,7 @@ public class AspceJAdvice {
     public void afterReturningAdvice(JoinPoint joinPoint, String retVal) {    
         System.out.println("-----afterReturningAdvice().invoke-----");  
         System.out.println("Return Value: " + retVal);   
-        System.out.println(" �˴����ԶԷ���ֵ����һ������");  
-        System.out.println(" ��ͨ��joinPoint����ȡ����Ҫ������");  
+
         System.out.println("-----End of afterReturningAdvice()------");  
     }  
     /** 
@@ -107,9 +104,7 @@ public class AspceJAdvice {
     @AfterThrowing(value = "aspectjMethod()", throwing = "ex")    
     public void afterThrowingAdvice(JoinPoint joinPoint, Exception ex) {    
         System.out.println("-----afterThrowingAdvice().invoke-----");  
-        System.out.println(" ������Ϣ��"+ex.getMessage());  
-        System.out.println(" �˴�����ִ�к���ҵ���߼�����ʱ�������쳣��������һЩ��־��¼�����ȵ�");  
-        System.out.println(" ��ͨ��joinPoint����ȡ����Ҫ������");  
+
         System.out.println("-----End of afterThrowingAdvice()------");    
     }    
 }  
