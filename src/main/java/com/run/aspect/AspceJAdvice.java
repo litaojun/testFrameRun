@@ -46,7 +46,7 @@ public class AspceJAdvice {
     public void beforeAdvice(JoinPoint joinPoint) {    
         System.out.println("-----beforeAdvice().invoke-----");  
         int a = joinPoint.getArgs().length;
-
+        System.out.println("-----End of beforeAdvice()------");
         System.out.println("-----End of beforeAdvice()------");  
     }  
       

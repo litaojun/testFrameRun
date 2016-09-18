@@ -36,10 +36,16 @@ public class TestContorl
 		Map<String,MatchResultMethon> ifsMap = TestManageContorl.getInterfacemethod();
 		MatchResultMethon curmed = ifsMap.get(name);
 		MethodContext mct = curmed.getMatchMethodContext(caseid);
-		String restr =TestContorl.tdm.getReqdata(caseid,name);
-		Object ob = objectMapper.readValue(restr, curmed.getParamerClass());
-		//System.out.println("caseid="+caseid);
-		String retstr = mct.invokeMethod(null, new Object[]{ob});
+		String reqstr =TestContorl.tdm.getReqdata(caseid,name);
+		String retstr=null;
+		if( curmed.getParamerClass()!=null)
+		{
+			Object ob = objectMapper.readValue(reqstr, curmed.getParamerClass());
+			//System.out.println("caseid="+caseid);
+			retstr = mct.invokeMethod(null, new Object[]{ob});
+		}
+		else
+			retstr = mct.invokeMethod(null, new Object[]{reqstr});
 		TestContorl.tdm.setRetdata(caseid, retstr);
         return retstr;
     }
@@ -54,7 +60,7 @@ public class TestContorl
 		MethodContext mct = curmed.getMatchMethodContext(caseid);
 		curmed = mct.getCurMRM();
 		//获取请求数据
-		String restr = TestContorl.tdm.getReqdata(caseid,name);
+		String reqstr = TestContorl.tdm.getReqdata(caseid,name);
 		//接口返回数据
 		String sponsestr = TestContorl.tdm.getRetdata(caseid,name);
 		//获取预期结果数据
@@ -74,11 +80,11 @@ public class TestContorl
 //			System.out.println("restr="+restr);
 //			System.out.println("caseid="+caseid);
 //			System.out.println("class="+curmed.reqcls);
-		    Object obs = objectMapper.readValue(restr, curmed.reqcls);
+		    Object obs = objectMapper.readValue(reqstr, curmed.reqcls);
 		    al.add(obs);
 		}
 		else
-			al.add(restr);
+			al.add(reqstr);
 		String retstr = mct.invokeMethod(null, new Object[]{sponsestr,al.get(1),al.get(0)});
         return retstr;
     }

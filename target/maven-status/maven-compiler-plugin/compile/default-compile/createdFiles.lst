@@ -1,12 +1,14 @@
 com\run\test\core\TestDataManager.class
-com\run\test\tcase\infs\UserAddInfo.class
 com\run\test\util\MatchResultMethon.class
-com\run\test\web\TestContorl.class
 com\run\aspect\AspceJAdvice.class
 com\run\filter\TestFilter.class
 com\run\test\core\CaseConfig.class
 com\run\test\SpringContextUtil.class
 com\run\TestFrameRunApplication.class
+com\run\test\util\ClassUtils.class
+com\run\test\tcase\infs\UserAddRsp.class
+com\run\test\tcase\infs\UserAddInfo.class
+com\run\test\web\TestContorl.class
 com\run\test\tcase\rstcpr\TestUserGetResultMatch.class
 com\run\test\util\HttpRequest.class
 com\run\test\util\MethodContext.class
@@ -14,8 +16,6 @@ com\run\test\util\TestCase.class
 com\run\test\core\TestDataManager$TestData.class
 com\run\test\core\TestManageContorl.class
 com\run\test\util\AnnotationFilterClass.class
-com\run\test\util\ClassUtils.class
 com\run\aspect\WebLogAspect.class
 com\run\test\tcase\infs\TestUserGetInterface.class
 com\run\test\util\ResultCompare.class
-com\run\test\tcase\infs\UserAddRsp.class
