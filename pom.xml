@@ -75,8 +75,8 @@
             <version>3.14</version>  
         </dependency>
         <dependency>  
-            <groupId>testcase</groupId>  
-            <artifactId>bestv</artifactId>  
+            <groupId>com</groupId>  
+            <artifactId>frame</artifactId>  
             <version>0.0.1-SNAPSHOT</version>  
         </dependency>
 	</dependencies>
