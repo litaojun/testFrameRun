@@ -38,7 +38,7 @@ public class TestContorl
 		MethodContext mct = curmed.getMatchMethodContext(caseid);
 		String reqstr =TestContorl.tdm.getReqdata(caseid,name);
 		String retstr=null;
-		if( curmed.getParamerClass()!=null)
+		if( curmed.getParamerClass()!=Class.class)
 		{
 			Object ob = objectMapper.readValue(reqstr, curmed.getParamerClass());
 			//System.out.println("caseid="+caseid);
@@ -75,7 +75,7 @@ public class TestContorl
 		}
 		else
 			al.add(yqresult);
-		if(curmed.reqcls!=null)
+		if(curmed.reqcls!=Class.class)
 		{
 //			System.out.println("restr="+restr);
 //			System.out.println("caseid="+caseid);
