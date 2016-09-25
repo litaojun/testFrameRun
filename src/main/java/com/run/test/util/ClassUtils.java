@@ -11,6 +11,8 @@ import java.util.List;
 import org.springframework.web.context.ContextLoader;
 import org.springframework.web.context.WebApplicationContext;
 
+
+
 public class ClassUtils { 
     public static List<Class> getAllImplClassesByInterface(Class c) { 
 
@@ -97,7 +99,7 @@ public class ClassUtils {
     
     public static void main(String[] args) throws ClassNotFoundException, IOException
     {
-    	 ArrayList<Class>  x = ClassUtils.filterClassByKey("HelloController","com");
+    	 ArrayList<Class>  x = ClassUtils.filterClassByKey("n","com.run.test.tcase.rstcpr");
     	 System.out.println("xxx="+x.size());
     	 for(Class s : x)
     		 System.out.println(s.getName());
